@@ -147,6 +147,7 @@ body {
     color: white;
     justify-content: space-between;
     font-size: 12px;
+    user-select: none;
 }
 
 #footer .copyright {
