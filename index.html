@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Frenzy-Canvas based game!">
+    <meta name="keywords" content="HTML, CSS, JavaScript,Canvas,Game">
+    <meta name="author" content="Pratiksha Sankhe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://lh3.googleusercontent.com/28nrgmD6RxYivtErK_lmuKCewS2rZWhzo7q_XUDUSLudJLU_OVLGPDNvduUopenK76lv94pwdMOf2b4xcJxkdeu_QlhiqkvOfStT8ziFroxvnIfZH6877cnNTLgJViFyn0tbfwrd9w=w2400">
+    <title>Frenzy</title>
+</head>
+
+<body>
+    <div class="start"><span>Score: </span><span id="score">0</span></div>
+
+    <div id="game">
+        <div class="box">
+            <h1 id="final_Score">0</h1>
+            <p class="points">Points</p>
+            <button id="startGame">Start Game</button>
+            <button id="rules" dou>Rules</button>
+        </div>
+        <div id="rules-content">
+            <p>1. On clicking the start game button,the game will start</p>
+            <p>2. You have to shoot those balls.</p>
+            <p>3. Your score depends on the radius of the enemy.More the radius,more would be your score.</p>
+            <p>4. The total score is displayed after your game ends.</p>
+            <h1 class="play">Happy Playing!</h1>
+        </div>
+    </div>
+    <canvas id="myCanvas"></canvas>
+    <footer id="footer">
+        <p class="copyright">Copyright 2021 &copy;</p>
+        <p class="name">-By Pratiksha Sankhe</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

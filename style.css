@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: initial;
+    background: black;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.start {
+    color: white;
+    font-size: 15px;
+    user-select: none;
+    padding: .5em;
+}
+
+#game {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    inset: 0;
+}
+
+.box {
+    background-color: white;
+    max-width: 35rem;
+    max-height: 25rem;
+    text-align: center;
+    width: fit-content;
+    padding: 1rem;
+    inset: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid white;
+    border-radius: 25px;
+    box-shadow: 0 0 17px rgba(255, 255, 255, 0.6);
+}
+
+#final_Score {
+    font-size: 2.95rem;
+    line-height: 1;
+    font: bold;
+    user-select: none;
+    margin-top: -2px;
+}
+
+.points {
+    margin-bottom: 28px;
+    font-size: 30px;
+    color: red;
+    font-weight: 1000;
+    user-select: none;
+}
+
+#startGame {
+    background: blue;
+    color: white;
+    border-radius: 10px;
+    font: small;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    width: 430px;
+    user-select: none;
+    border: 2px solid black;
+    animation-name: fade;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#startGame:hover {
+    transform: scale(1.05);
+    text-transform: uppercase;
+}
+
+#rules {
+    background: blue;
+    color: white;
+    border-radius: 10px;
+    font: small;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    width: 430px;
+    user-select: none;
+    border: 2px solid black;
+    margin-top: 35px;
+    animation-name: fade;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+}
+
+#rules:hover {
+    transform: scale(1.05);
+    text-transform: uppercase;
+}
+
+#rules-content {
+    display: none;
+    border: 2px solid black;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 900;
+    background-color: white;
+    z-index: 100;
+    margin-top: 300px;
+    animation-name: fade1;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.play {
+    font-size: 20px;
+    text-align: center;
+    text-shadow: .5px .5px;
+}
+
+@keyframes fade1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#footer {
+    position: fixed;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+#footer .copyright {
+    padding-left: 2px;
+}
+
+#footer .name {
+    padding-right: 2px;
+}
