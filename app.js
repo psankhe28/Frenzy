@@ -97,7 +97,7 @@ class Opponent {
     }
 }
 
-//Praticle class(for the enemies being destroyed in parts)
+//Particle class(for the enemies being destroyed in parts)
 class Particle {
     constructor(x, y, radius, color, velocity) {
         this.x = x;
